@@ -2,6 +2,7 @@ package com.bituco.nasapod.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
@@ -26,6 +27,7 @@ class ApodAcitivity : AppCompatActivity() {
             apod = ApodInstance.api.getApod(key).body()
             title.text = apod!!.title
             description.text = apod!!.explanation
+            description.setMovementMethod(ScrollingMovementMethod())
             Glide.with(this@ApodAcitivity).load(apod!!.url).into(image)
         }
     }
