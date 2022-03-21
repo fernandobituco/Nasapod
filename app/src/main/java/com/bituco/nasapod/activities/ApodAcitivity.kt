@@ -27,7 +27,7 @@ class ApodAcitivity : AppCompatActivity() {
             apod = ApodInstance.api.getApod(key).body()
             title.text = apod!!.title
             description.text = apod!!.explanation
-            description.setMovementMethod(ScrollingMovementMethod())
+            //description.setMovementMethod(ScrollingMovementMethod())
             Glide.with(this@ApodAcitivity).load(apod!!.url).into(image)
         }
     }

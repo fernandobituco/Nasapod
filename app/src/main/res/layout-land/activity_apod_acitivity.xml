@@ -14,11 +14,11 @@
 
         <ImageView
             android:id="@+id/apodImage"
-            android:layout_width="386dp"
-            android:layout_height="376dp"
+            android:layout_width="664dp"
+            android:layout_height="363dp"
             app:layout_constraintBottom_toTopOf="@+id/description"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintHorizontal_bias="0.444"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageTitle"
             app:layout_constraintVertical_bias="0.0"
@@ -40,11 +40,10 @@
 
         <TextView
             android:id="@+id/description"
-            android:layout_width="380dp"
-            android:layout_height="690dp"
-            android:scrollbars="vertical"
+            android:layout_width="736dp"
+            android:layout_height="644dp"
             android:text="Description"
-            android:textSize="18dp"
+            android:textSize="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
