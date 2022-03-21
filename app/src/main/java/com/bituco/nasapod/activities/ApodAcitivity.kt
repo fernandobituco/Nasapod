@@ -1,16 +1,17 @@
 package com.bituco.nasapod.activities
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
-import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.bituco.nasapod.R
 import com.bituco.nasapod.interfaces.ApodInstance
 import com.bituco.nasapod.models.ApodModel
 import com.bumptech.glide.Glide
+
 
 class ApodAcitivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

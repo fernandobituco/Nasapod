@@ -1,6 +1,7 @@
 package com.bituco.nasapod.activities
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -17,10 +18,12 @@ class MainActivity : AppCompatActivity() {
         nasaLogo.setOnClickListener { startActivity(Intent(this, ApodAcitivity::class.java)) }
 
         val githubLogo = findViewById<ImageView>(R.id.githubLogo)
-        githubLogo.setOnClickListener { openGithub() }
+        githubLogo.setOnClickListener { openGithub("https://github.com/fernandobituco") }
     }
 
-    private fun openGithub() {
-        /*"Open github on web browser"*/
+    private fun openGithub(url : String) {
+        val webpage: Uri = Uri.parse(url)
+        val intent = Intent(Intent.ACTION_VIEW, webpage)
+        startActivity(intent)
     }
 }
