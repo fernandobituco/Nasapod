@@ -5,40 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#88D7F4"
-    tools:context=".activities.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Astronomy Picture of The Day"
-        android:textSize="28dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
+    tools:context=".activities.ApodAcitivity">
 
     <ImageView
-        android:id="@+id/nasaLogo"
+        android:id="@+id/apodImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
         app:srcCompat="@drawable/kisspng_nasa_insignia_logo_image_outer_space_download_nasa_vector_logo_eps_ai_free_seek_5bfcc9e1beb8a8_8315770215432934097812_removebg_preview" />
 
-    <ImageView
-        android:id="@+id/githubLogo"
-        android:layout_width="77dp"
-        android:layout_height="69dp"
+    <TextView
+        android:id="@+id/imageTitle"
+        android:layout_width="278dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Title"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="393dp"
+        android:layout_height="213dp"
+        android:text="Description"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898"
-        app:srcCompat="@drawable/githublogo" />
-
+        app:layout_constraintVertical_bias="0.969" />
 </androidx.constraintlayout.widget.ConstraintLayout>

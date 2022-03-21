@@ -1,9 +1,12 @@
-package com.bituco.nasapod
+package com.bituco.nasapod.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.ImageView
+import androidx.lifecycle.lifecycleScope
+import com.bituco.nasapod.R
+import com.bituco.nasapod.interfaces.ApodInstance
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val nasaLogo = findViewById<ImageView>(R.id.nasaLogo)
-        nasaLogo.setOnClickListener { apodActivity() }
+        nasaLogo.setOnClickListener { startActivity(Intent(this, ApodAcitivity::class.java)) }
 
         val githubLogo = findViewById<ImageView>(R.id.githubLogo)
         githubLogo.setOnClickListener { openGithub() }
@@ -19,9 +22,5 @@ class MainActivity : AppCompatActivity() {
 
     private fun openGithub() {
         /*"Open github on web browser"*/
-    }
-
-    private fun apodActivity() {
-        /*"Call the get and the next activity"*/
     }
 }
